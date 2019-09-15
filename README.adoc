@@ -1,5 +1,5 @@
 # Linux
-= C++ Design Patterns
+= Red Hat Linux
 :toc:
 :toc-placement!:
 
@@ -7,68 +7,40 @@ toc::[]
 
 # Introduction
 
-This demonstrates:
+*What is this lab about*
 
-* Modern C++ Design Patterns
-* Modern C++ techniques
-* Modern C++ features (11, 14, 17)
+The intent of this lab is to introduce the user to Linux, the Linux command-line and some preparation to set the user on the path towards becoming a Linux command-line power user.
 
-The example also shows how to setup a CMake project which includes sub-projects.
+*What this lab is not about*
 
+This is not a Linux Admin lab.  This lab does not replace the training available from Red Hat for Linux Admins.
 
-# Sub-Projects
+*What is it about Linux?*
 
-SOLID Design <<solid-cpp/README.adoc#title, README>>
+* Linux is _open source_
+* Linux has a powerful and scriptable _command-line interface_ _(CLI)_
+* Linux is _modular_
 
-Creational Patterns <<creational-cpp/README.adoc#title, README>>
+What is a Linux distribution?
 
-# Pre-requisites
+* Distributions consist of a Linux kernel and supporting user space programs
+* Distributions can be small and single-purpose or include thousands of open source programs
+* Distributions must provide a means of installing and updating the distribution and it components
+* The provider of the distribution must support that software and is typically part of the community developing the software
 
-You should have the following installed:
+What are the differences between Fedora, RHEL, Centos and derivatives?
 
-* Git
-* CLion
-* CMake
-* Boost (on the path or in Mingw)
-* Valgrind (We will do some Modern C++ concurrency in a few sections)
-* gcc (Windows Mingw, Mac CLang or gcc)
+image::./images/red-hat-linux.png[How Red Hat community works]
 
-## Mac install:
+Why not just use CentOS again?
 
-<<env/mac-env.adoc#title, Mac Install>>
+image::./images/centos.png[What about CentOS]
 
-## Ubuntu install:
+# Lab Environment
 
-<<env/ubuntu-env.adoc#title, Ubuntu Install>>
+Before starting, let's get familiar with the link:lab-environment.adoc[lab environment] setup.
 
-## Windows install:
+# Outline
 
-<<env/windows-env.adoc#title, Windows Install>>
+. link:./1shell.adoc[Working with the shell]
 
-## CLion Project
-
-<<env/clion.adoc#title, CLion>>
-
-## Using Git
-
-<<env/scm.adoc#title, git>>
-
-## Build
-
-<<env/build.adoc#title, Build Environment>>
-
-## Unit Testing
-
-<<req/unit-testing.adoc#title, Unit Testing>>
-
-## Packaging
-
-<<req/packaging.adoc#title, Packaging>>
-
-## Static Analysis
-
-<<req/static-analysis.adoc#title, Static Analysis>>
-
-## Directory Structure
-
-<<req/directory-structure.adoc#title, Requirements for directory structure>>

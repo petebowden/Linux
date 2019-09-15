@@ -1,0 +1,85 @@
+== Working with the Shell
+
+In this module we will begin working with the shell.  We will not be accessing a graphical user interface, in which case we would be using a _terminal emulator_, much like the _command_ app on Windows.
+
+There are many shell programs but, the default we will be using is the _bash_ shell which stands for _Bourne Again Shell_ and simply called _bash_.
+
+When we used _SSH_ to access the command-line in our lab workstation instance, we were placed into _bash_ at what is called the _shell prompt_.
+
+=== Shell Prompt
+
+The _shell prompt_ usually includes your _username@machinename_ followed by the working directory and a dollar sign.
+
+Now we can start the lab.
+
+=== Running some initial commands
+
+To test out our _CLI_ and get used to the _shell prompt_, we can try out a few simple commands.
+
+----
+NOTE
+The bash shell is very similar to the command-line interpreter found in Microsoft Windows.  Bash is provides a powerful scripting language similar to Windows PowerShell.  If you are using a Terminal utility on Apple macOS, bash is the default shell.
+----
+
+Shell commands have three basic parts:
+
+* The _command_ to run
+* _Options_ to adjust the behavior of the command
+* _Arguments, which are targets of the command
+
+The _command_ is the name of the program to run.  It may be followed by one or more _options_, which adjust the behavior of the command or what it will do.  Options normally start with one or two dashes (_-a_ or _--all__) to distinguish them from arguments.  Commands may also be followed by one or more _arguments_, which often indicate a target that the command should operate upon.
+
+*Let's run a few simple commands.*
+
+Although we know who the current user is by looking at the prompt, we can find out explicitly by asking *whoami*:
+
+image::./images/whoami-command.png[]
+
+We can also explicitly find out our present working directory using the *pwd* command:
+
+image::./images/pwd-command.png[]
+
+The *cal* command displays a calendar of the current month:
+
+image::./images/cal-command.png[]
+
+If we want to see the current *date* we can issue *date* command:
+
+image::./images/date-command.png[]
+
+We can format the date using the plus sign (*+*):
+
+image::./images/date-filter-command.png[]
+
+You may have noticed by this point that your terminal, _shell prompt_, window is getting a little cluttered.
+You may want to clean this up and can issue the *clear* command to do so.
+
+If you want to find a command you issued before, we can find that by issuing the *history* command:
+
+image::./images/history-command.png[]
+
+A quick way to execute a previous command, is to issue the *history* command and then issue a *bang* with the history number:
+
+image::./images/re-issue-history-command.png[]
+
+Let's explore a couple of other useful commands to get going.
+
+If we wanted to determine how much free space was on our disk, we would enter the *df* command:
+
+image::./images/df-command.png[]
+
+Now let's say we wanted to determine how much *free* memory we had available to run programs:
+
+image::./images/free-command.png[]
+
+If you want to *exit* from the current terminal, just issue the *exit* command.
+Let's not do this right now because we will be continuing to use this session during the lab.
+
+
+=== Conclusion
+
+In this workshop module, you have:
+
+* Configured and Installed AMQ Streams
+* Deployed a simple Kafka cluster
+* Run a producer and consumer to validate the settings
