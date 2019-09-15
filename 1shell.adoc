@@ -75,11 +75,64 @@ image::./images/free-command.png[]
 If you want to *exit* from the current terminal, just issue the *exit* command.
 Let's not do this right now because we will be continuing to use this session during the lab.
 
+=== Some Basic File Manipulation
+
+Let's learn some basic file manipulation using the *cat* command.
+
+We can't really start off without the prerequisite "Hello World!".
+
+Using *cat* we can enter data into a file.  Text and other files do not require an extension like in Windows.
+
+Issue the command $ cat > helloworld
+
+This will create a file called "helloworld" and allow you to start entering text.
+
+Just type in _Hello World!_ and hit Ctrl+D to terminate the line.
+
+We now have a file with the contents you entered.
+
+Next *cat* the file to see the contents:
+
+image::./images/cat-command.png[]
+
+Now lets say we have create a second file.
+
+Issue the command $ cat > helloworld2
+
+Enter some unique text and issue Ctrl+D to terminate the line.
+
+Let's now use *cat* to concatenate the files into a third file:
+
+image::./images/concatenate-files.png[]
+
+Perhaps you might want to see the line numbers in a file:
+
+image::./images/cat-line-number.png[]
+
+Now let's append the contents of one file to another file:
+
+image::./images/cat-append-file.png[]
+
+What is we just wanted to see the first few lines or last few lines of a file?
+
+We could use the *head* or *tail* command.  By default, these commands display only 10 lines of the file.
+We would have to use the *-n* option to allow a different number of lines to be specified.
+
+image::./images/head-tail-command.png[]
+
+What if we just wanted to get the number of lines, words and characters in a file?
+We could issue the *wc* command and with some options like *-l*, *-w*, or *-c* we could display only the number of lines,
+ number of words or number of characters.
+
+image::./images/wc-command.png[]
+
+*Making Life Easier For Ourselves*
+
+
 
 === Conclusion
 
-In this workshop module, you have:
+In this workshop module, we have:
 
-* Configured and Installed AMQ Streams
-* Deployed a simple Kafka cluster
-* Run a producer and consumer to validate the settings
+* Logging into a bash shell
+* Learned the basic syntax of issuing commands from the command-line in a bash shell
