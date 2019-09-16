@@ -41,11 +41,14 @@ image::./images/centos.png[What about CentOS]
 Before starting, let's get familiar with the link:lab-environment.adoc[lab environment] setup.
 
 # Outline
-
+[#toc]
 . link:./1shell.adoc[Working with the shell]
 . link:./2navigation.adoc[Navigation and the File System]
 . link:./3manipulatingfiles.adoc[Manipulating Files]
 . Using MAN Pages
 . Permissions
 . Processes
-
+. link:./7webconsole.adoc[Web Console]
+. link:./8wayland.adoc[Wayland]
+. link:./podman.adoc[Podman]
+. link:./buildah.adoc[Buildah and Skopeo]
