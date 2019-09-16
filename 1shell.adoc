@@ -16,10 +16,10 @@ Now we can start the lab.
 
 To test out our _CLI_ and get used to the _shell prompt_, we can try out a few simple commands.
 
-----
-NOTE
-The bash shell is very similar to the command-line interpreter found in Microsoft Windows.  Bash is provides a powerful scripting language similar to Windows PowerShell.  If you are using a Terminal utility on Apple macOS, bash is the default shell.
-----
+
+[NOTE]
+The bash shell is very similar to the command-line interpreter found in Microsoft Windows.
+Bash is provides a powerful scripting language similar to Windows PowerShell.  If you are using a Terminal utility on Apple macOS, bash is the default shell.
 
 Shell commands have three basic parts:
 

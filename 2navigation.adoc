@@ -78,11 +78,135 @@ What just happened here:
 . We listed the contents (nothing)
 . We changed directory back to the HOME directory using the (~)
 
+=== Relative Paths
+
+Absolute pathnames start from the root directory and lead to a destination.  But a _relative pathname_ starts
+from the working directory.
+
+To do this we use the . (dot) and the .. (dot dot) symbols.
+
+the . symbol always refers to the working directory.
+
+The .. symbol always refers to the working directory's parent directory.
+
+With this knowledge, we can practice navigating using the change directory command *cd*.
+
+image:./images/change-directory.png[]
+
+=== More Navigation
+
+Navigating the directory tree is a very powerful feature.
+
+In order to explore some more of the *list* feature, we will have to learn
+how to create some files using the *touch* command.
+
+The *touch* command updates a file's timestamp to the current date and time without otherwise
+modifying the file.  Using this feature, we can create some empty files for practice.
+
+In essence, *touching* a file name causes a file to be created with that name.  The file is *empty* when it is *touched*.
+
+image:./images/touch-command.png[]
+
+Using the *ls* command, we have multiple options for displaying the attributes on files and determining what is in directories
+and subdirectories.
+
+*ls* *-l* is referred to as _long listing format_.
+
+image:./images/long-listing-format.png[]
+
+*ls -a* is referred to as _all files, including hidden files_.
+
+image:./images/list-all-files.png[]
+
+We can combine options and _long list all files_.
+
+image:./images/long-list-all-files.png[]
+
+We can also recursively list all files including what is in subdirectories using the *-R* option.
+
+image:./images/recursive-list-files.png[]
+
+=== _ls_ options
+|===
+|Option|Long Option|Description
+|-a|--all|Lists all files.  This includes all hidden files (files beginning with a period).
+|-d|--directory|Lists the contents of the directory but not the directory itself.  When used with the -l option, details about the directory rather than the contents will be displayed
+|-F|--classify|Appends an indicator character to the end of each listed name
+|-h|--human-readable|Displays file sizes in human-readable format rather than bytes
+|-l||Displays results in long format
+|-r|--reverse|Displays results in reverse order.
+|-s||Sorts results by file size
+|-t||Sorts by modification time
+|===
+
+[NOTE]
+.Filenames
+====
+* When a filename begins with a period (.), it is considered hidden.  This means that the *ls* commend will only display it if using the *ls -a* option.
+* Filenames and commands are case sensitive
+* Linux has no concept of a "file extension"
+* Linux supports long filenames that may contain embedded spaces and punctuation but, limit the punctuation characters to period, dash and underscore.
+====
+
+=== Quickly Viewing File Contents
+
+Although we just stated that Linux does not use a files extension to determine it's _type_, we would still like to determine a what the contents are.
+
+To do this, we can use the _file_ command.
+
+Let's list the file contents of a known file on RHEL:
+
+$ file /usr/share/backgrounds/day.jpg
+
+image::./images/file-command.png[]
+
+[NOTE]
+.How what?
+====
+How did we even find that file in the first place?  Well, using the _find_ command of course.
+
+$ sudo find / -iname '*.jpg'
+
+Try it out and see what you _find_.
+====
+
+=== Viewing File Contents with *less*
+
+We use the *less* command to view text files.
+
+In Linux, the ability to read and search configuration files gives us insight into how the system is working.
+
+Most automation files are actually scripts which also are kept in text and many times we want to examine the file without opening it for editing.
+
+The *less* command is relatively simple to use:
+
+$ less _filename_
+
+Let's explore a file used to define all the system's user accounts.  We don't want to edit it but, we do want to navigate in it and search it.
+
+$ less /etc/passwd
+
+With the file contents displayed, we can use the following commands to navigate within it:
+|===
+|Command|Action
+|page up or b|Scroll back one page
+|page down or Spacebar|Scroll forward one page
+|Up arrow|Scroll up one line
+|Down arrow|Scroll down one line
+|G|Move to the end of the text file
+|g|Move to the beginning of the text file
+|/characters|Search forward to the next occurance of _character_
+|n|Search for the next occurance of the previous search
+|h|Display the help screen
+|q|Quit _less_
+|===
+
 === Conclusion
 
 In this workshop module, we have:
 
 * Learned about the file and directory hierarchy in Linux
 * Learned the basic syntax of navigating the directory hierarchy
+* Learned how to view the contents of a file
 
 
