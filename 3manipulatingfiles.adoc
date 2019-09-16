@@ -68,3 +68,103 @@ Using wildcards allows us to select filenames based on patterns.
 
 === Create Directories
 
+Using the *mkdir* command, we can create one or more directories or subdirectories.
+*mkdir* will fail when the directory already exists or, if we are try to create a subdirectory in a directory
+that does not yet exist.
+
+Let's create a subdirectory in the *Videos* directory called *Watched*.
+
+image:./images/videowatched.png[]
+
+[NOTE]
+This failed because we misspelled the directory.  You will find, eventually, there is a _-p_ option which could have been used.
+This would have been a problem because the _mkdir -p_ command+option would have unintended consquences such as generating a new
+directory structure without generating an error message as it creates _missing_ parent directories.
+
+So lets do it the correct way:
+
+image:./images/mkdircorrect.png[]
+
+Now let's create multiple directories under a parent directory.  Using *mkdir* with a space-delimited list of directory names,
+we can create multiple subdirectories in the /home/student/Documents directory.
+
+image:./images/mkdirmultiple.png[]
+
+This can get interesting as we can create multiple parent and subdirectories using that *mkdir -p* command+option.
+
+image:./images/mkdirsubs.png[]
+
+Notice how the _-p_ option created the missing parent directory _Mypaper_.
+
+=== Copy Files
+
+Using *cp* commands, we can copy files to a directory.
+
+[NOTE]
+If the destination file already exists, the *cp* command will overwrite the file.
+
+image:./images/cpcommand.png[]
+
+We can copy multiple files with the same command but, by default the *cp* command ignores directories.
+
+image:./images/cpdirectoryignored.png[]
+
+We can copy files to the current working directory.
+
+image:./images/cptocurrent.png[]
+
+And we can copy the _contents_ of one directory to another.
+
+image:./images/cprecursive.png[]
+
+=== Move Files
+
+Moving a file moves it from one location to another.  This can also be used to rename a file with the file contents
+remaining unchanged.
+
+image:./images/mvcommand.png[]
+
+Now let's move a file to a different directory.
+
+image:./images/mvtest.png[]
+
+=== Removing Files
+
+We've created a lot of files and directories here so let's explore the *rm* command to remove them.
+
+[NOTE]
+By default, the *rm* command will not remove directories with files in them.
+
+[NOTE]
+There is no undelete or "trash bin".  If you delete it, it's gone.
+
+image:./images/rmfile.png[]
+
+Remove a subdirectory file.
+
+image:./images/rmsubdirectoryfile.png[]
+
+Remove a subdirectory recursively (it contains files).
+
+image:./images/rmprojectx.png[]
+
+.Some other options to remove files and directories
+|===
+|Option|Description
+|-f|Force remove
+|-d|Equivalent to rmdir
+|-i|Interactively prompt for confirmation (if used with -f, the -f will take precedence)
+|===
+
+
+=== Conclusion
+
+In this workshop module, we have:
+
+* Learned how to manage files using the most common file and directory commands
+* Learned about several of the options available to the most common commands
+
+
+
+
+
