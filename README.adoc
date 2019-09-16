@@ -1,3 +1,7 @@
+:gitrepo: https://github.com/petebowden/Linux
+:doctype: book
+:sectnums:
+:sectnumlevels: 3
 ifdef::env-github[]
 :tip-caption: :bulb:
 :note-caption: :information_source:
