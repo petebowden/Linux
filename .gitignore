@@ -10,6 +10,7 @@ CMakeCache.txt
 .DS_Store
 .gitkeep
 *.iml
+Linux.iml
 .idea/.gitignore
 .idea/misc.xml
 .idea/modules.xml
