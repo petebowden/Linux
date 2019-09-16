@@ -128,9 +128,27 @@ image::./images/wc-command.png[]
 
 === Making Life Easier For Ourselves
 
+Although there are many things we can automate with the shell, there are a few things we can
+take advantage of which make moving around in the shell easier.
+
 *Tab Completion*
 
+_Tab completion_ allows us to complete commands or file names after we have typed enough at the prompt
+to make it unique.
+
+$ hel Tab+Tab
+
+image:./images/hel-tab-tab.png[]
+
+or
+
+$ ls hello Tab produces $ ls helloworld
+
 *Editing a Command Line*
+
+_Some powerful editing command-line shortcuts_
+
+image:./images/command-line-shortcuts.png[]
 
 === Conclusion
 
