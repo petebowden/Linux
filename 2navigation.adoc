@@ -142,7 +142,7 @@ image:./images/recursive-list-files.png[]
 [NOTE]
 .Filenames
 ====
-* When a filename begins with a period (.), it is considered hidden.  This means that the *ls* commend will only display it if using the *ls -a* option.
+* When a filename begins with a period (.), it is considered hidden.  This means that the *ls* command will only display it if using the *ls -a* option.
 * Filenames and commands are case sensitive
 * Linux has no concept of a "file extension"
 * Linux supports long filenames that may contain embedded spaces and punctuation but, limit the punctuation characters to period, dash and underscore.
