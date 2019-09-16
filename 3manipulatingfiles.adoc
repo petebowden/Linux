@@ -1,0 +1,70 @@
+== Manipulating Files
+
+Since we are working on becoming power users, we should learn how to use several of the most common commands.
+
+If you are coming from a Windows background, you ask yourself, what can't I do with the CLI
+that can't be done with a graphical file manager?
+
+Easy, I can automate it.  For example, how could we copy all the HTML files from one directory
+to another - but only those that do not exist in the destination directory or are newer than
+the versions in the destination directory?
+
+With a file manager, not so easy.  With the CLI?
+
+$ cp -u *.html destination
+
+.Here are the common command-line management commands we will review:
+|===
+|Command|Syntax|Description
+|mkdir|mkdir _directory_|Create a directory
+|cp|cp _file new-file_|Copy a file
+|cp -r|cp -r _directory new-directory_|Copy a directory and its contents
+|mv|mv _file new-file_|Move or rename a file or directory
+|rm|rm _file_|Remove a file
+|rm -r|rm -r _directory_|Remove a directory containing files
+|rmdir|rmdir _directory_|Remove an empty directory
+|===
+
+=== Using Wildcards
+
+Prior to getting into the commands, it will be useful to understand wildcards.
+
+The shell uses filenames so much, it provides special characters to help rapidly specify groups of filenames.
+
+These special characters are called _wildcards_.
+
+Using wildcards allows us to select filenames based on patterns.
+
+.Here is a list of wildcards and what they select:
+|===
+|Wildcard|Matches
+|*|Any characters
+|?|Any single character
+|[_characters_]|Any character that is a member of a set of _characters_
+|[!_characters_]|Any character that is not a member of the set of _characters_
+|\[[:_class_:]]|Any character that is a member of the specified _class_
+|===
+
+.What are the character classes?
+|===
+|Character Class|Matches
+|[:alnum:]|Any alphanumberic character
+|[:alpha:]|Any alphabetic character
+|[:digit:]|Any numberal
+|[:lower:]|Any lowercase letter
+|[:uppder:]|Any uppercase letter
+|===
+
+.So let's see some wildcard examples we can embed into our commands:
+|===
+|Pattern|Matches
+|*|All files (almost like Windows but, better!)
+|h*|Any file beginning with _h_
+|c*.dat|Any file beginning with _c_ followed by any characters and ending with _.dat_
+|Pete???|Any file beginning with _Pete_ followed by exactly three characters
+|[abc]*|Any file beginning with either _a, b, or c_
+|/[![:digit:]]*|Any file not beginning with a numeral
+|===
+
+=== Create Directories
+
