@@ -25,7 +25,7 @@ Shell commands have three basic parts:
 
 * The _command_ to run
 * _Options_ to adjust the behavior of the command
-* _Arguments, which are targets of the command
+* _Arguments_, which are targets of the command
 
 The _command_ is the name of the program to run.  It may be followed by one or more _options_, which adjust the behavior of the command or what it will do.  Options normally start with one or two dashes (_-a_ or _--all__) to distinguish them from arguments.  Commands may also be followed by one or more _arguments_, which often indicate a target that the command should operate upon.
 
@@ -126,9 +126,11 @@ We could issue the *wc* command and with some options like *-l*, *-w*, or *-c* w
 
 image::./images/wc-command.png[]
 
-*Making Life Easier For Ourselves*
+=== Making Life Easier For Ourselves
 
+*Tab Completion*
 
+*Editing a Command Line*
 
 === Conclusion
 
