@@ -32,7 +32,7 @@ What are the differences between Fedora, RHEL, Centos and derivatives?
 
 image::./images/red-hat-linux.png[How Red Hat community works]
 
-Why not just use CentOS again?
+*Why not just use CentOS again?*
 
 image::./images/centos.png[What about CentOS]
 
@@ -43,4 +43,4 @@ Before starting, let's get familiar with the link:lab-environment.adoc[lab envir
 # Outline
 
 . link:./1shell.adoc[Working with the shell]
-
+. link:./2navigation.adoc[Navigation and the File System]

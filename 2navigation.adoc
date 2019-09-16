@@ -1,0 +1,88 @@
+== Navigation and the File System
+
+With our new found knowledge of the shell, let's learn a few things about
+navigating the filesystem on Linux.
+
+=== The File System
+
+Linux is organized around files in a _hierarchical directory structure_.
+
+In Windows, we would call this a tree of folders but, on Linux they are referred to as directories.
+
+The top level directory is referred to as the _root directory_.
+
+Linux has a single file system tree and devices such as USB or other drives
+are _mounted_ at some place in the directory tree.
+
+On Linux, all files are stored in this file system and organized into a file-system hierarchy.
+
+The _root_ is said to be at the top of the hierarchy and the branches of directories
+and subdirectories stretch below the root.  It is therefore, considered and _inverted_ tree.
+
+image:./images/inverted-tree.png[]
+
+The / directory is the root directory at the top of the hierarchy.
+
+This is overloaded and the / character is also used as a directory separator
+in file names.
+
+The following table lists some of the most important directories in RHEL.
+
+image:./images/linux-directories.png[]
+
+=== Navigation
+
+*Present working directory*
+
+We have already used this command but, let's review it again.
+
+To get the present working directory, we will _print working directory_ using the _pwd_ command:
+
+image:./images/pwd2-command.png[]
+
+This is actually our _HOME_ directory and we know this because the command prompt tells us with the _~_ symbol
+as well.
+
+Each user account has it's own _home_ directory which is where we will write most of our files.
+
+*Listing Contents and Changing Directories*
+
+One of the most widely used commands is to list the contents of a directory using the _ls_ command.
+
+image:./images/ls-command.png[]
+
+Often times we will want to list the contents of a directory or change the current working directory so we are
+said to be working with either _absolute_ or _relative_ paths in the tree of directories.
+
+image:./images/absolute-relative-paths.png[]
+
+A _path_ of a file or directory specifies its unique file system location.
+Following a file path traverses one or more named subdirectories, delimited by a forward slash /, until
+the destination is reached.
+
+Directories contain other files and other subdirectories.
+
+Let's test this out by navigating using *pwd* to display the full path of the current working directory.
+Then the *ls* command to list the directory contents and the *cd* command to change directories and follow the path.
+
+image:./images/navigating-paths.png[]
+
+What just happened here:
+
+. We checked the current working directory
+. We listed the contents of the current working directory
+. We changed directory to the /Videos directory
+. We checked the current working directory
+. We listed the contents (nothing)
+. We changed directory up one level by using the (..) operation and the down to the /Documents directory
+. We listed the contents (nothing)
+. We changed directory back to the HOME directory using the (~)
+
+=== Conclusion
+
+In this workshop module, we have:
+
+* Learned about the file and directory hierarchy in Linux
+* Learned the basic syntax of navigating the directory hierarchy
+
+
