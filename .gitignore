@@ -1,0 +1,17 @@
+# Created by .ignore support plugin (hsz.mobi)
+
+**/cmake-build-debug
+**/.idea
+**/.iml
+*.cmake
+Makefile
+CMakeFiles
+CMakeCache.txt
+.DS_Store
+.gitkeep
+*.iml
+.idea/.gitignore
+.idea/misc.xml
+.idea/modules.xml
+.idea/vcs.xml
+
