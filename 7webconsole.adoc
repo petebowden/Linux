@@ -62,7 +62,7 @@ firewall-cmd --reload
 
 == Web Console User Interface
 
-Login to web console on *workstation.example.com* [ Use your FQDN with GUID: rhel8lab-<GUID>.rhpds.opentlc.com ]
+Login to web console on *workstation.example.com* [ Use your FQDN with GUID: *https://rhel8lab-<GUID>.rhpds.opentlc.com* ]
 
 ====
 image::cockpit-image13.png[Cockpit Login]
