@@ -32,19 +32,17 @@ The following exercises will walk you through installing and configuring Web Con
 
 == Getting Started
 
-Since we already have web-console installed and active on *workstation.example.com*, we have the option to manage multiple additional hosts via this single portal.  Let's install a few packages to enable the web-console dashboard on *workstation.example.com*.  These steps needs to be performed as root.
+We already have web-console installed and active on *workstation.example.com*, but as a reference these are the commands to install the web console.
 
-.[root@workstation]#
+[NOTE]
+====
+_Native command(s) to install and enable cockpit_
 ----
 yum install -y cockpit-dashboard
-----
-
-Once the packages are installed, you will need to restart the cockpit services to enable the new functionality.
-
-.[root@workstation]#
-----
 systemctl restart cockpit
 ----
+====
+
 
 This will likely force you to sign-on to the web console again.
 
