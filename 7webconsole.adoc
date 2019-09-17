@@ -43,15 +43,6 @@ systemctl restart cockpit
 ----
 ====
 
-
-This will likely force you to sign-on to the web console again.
-
-Click the icon on the left that looks like a speedometer.
-
-Now click on the *+* icon to add *node2.example.com* to the list of servers we can manage with this web-console.
-
-Now click on *node2.example.com* in the server list to start with this lab.
-
 == Installation and Configuraiton
 
 === Packages and Services
@@ -71,7 +62,13 @@ firewall-cmd --reload
 
 == Web Console User Interface
 
-On host *workstation.example.com*, use the console GUI to start a web browser.
+Login to web console on workstation.example.com
+
+Click the icon on the left that looks like a speedometer.
+
+Now click on the *+* icon to add *node2.example.com* to the list of servers we can manage with this web-console.
+
+Now click on *node2.example.com* in the server list to start with this lab.
 
 ====
 image::cockpit-image13.png[Cockpit Login]
