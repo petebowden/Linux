@@ -29,4 +29,19 @@ At the start of the lab you have been provided with a GUID, which uniquely ident
 In the following instructions, replace the `<GUID>` placeholder with your GUID.
 For example, if your GUID is `a2b3`, the URL `workstation-<GUID>.example.com` becomes `workstation-a2b3.example.com`.
 
+
+[discrete]
+=== Executing tasks on the CLI
+
+[discrete]
+==== Input
+
+Each block of commands to execute will be labeled with the expected *user-id* and *host*.  To enhance cut & paste efficiency, the command prompt is omitted from each line.
+
+.[root@master ~]#
+----
+systemctl status sshd
+----
+
+
 Now, let's start the lab.
