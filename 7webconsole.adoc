@@ -62,7 +62,7 @@ firewall-cmd --reload
 
 == Web Console User Interface
 
-Login to web console on workstation.example.com
+Login to web console on *workstation.example.com*
 
 Click the icon on the left that looks like a speedometer.
 
