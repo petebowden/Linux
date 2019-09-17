@@ -45,7 +45,7 @@ Before starting, let's get familiar with the link:lab-environment.adoc[lab envir
 . link:./1shell.adoc[Working with the shell]
 . link:./2navigation.adoc[Navigation and the File System]
 . link:./3manipulatingfiles.adoc[Manipulating Files]
-. Using MAN Pages
-. Permissions
+. link:./4understandingcommands.adoc[Understanding Commands]
+. link:./5permissions.adoc[Permissions]
 . Processes
 

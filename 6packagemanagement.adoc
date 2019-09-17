@@ -1,0 +1,123 @@
+== Package Management
+
+One of the most important determinants of a Linux distributions quality is the _package management_ system and the
+level of support from the both the community and the vendor.
+
+Because this is open source and so many updates occur, many top-tier distributions release every few
+months and many programs are updated every day.
+
+Keeping up the the dependencies and transitive dependencies of the packages in a distro and ensuring they are
+all tested and certified is up to the vendor and the distro.
+
+_Package management_ is the method of installing and maintaining the software on the system.
+
+The Red Hat style of package management is (.rpm).  Fedora, CentOS, RHEL, SuSe, openSUSE, Mandriva, Amazon Linux and OEL/OL
+all use .rpm packaging.
+
+=== Package Files
+
+Package files are a compressed collection of files that comprise a software package.
+
+This package could consist of numerous programs and data files that support the program.
+
+The package file also contains metadata about the package; e.g. text description of the package and its contents.
+
+The package file may also contain pre- and post-installation scripts for configuration tasks both before and after the installation.
+
+=== Repositories
+
+A repository is created by a distribution vendor and is where package files are stored.
+
+The package management system also provides for _dependency resolution_ to ensure that when a package is installed, all of
+its dependencies are installed too.
+
+=== Tooling
+
+Red Hat style distributions use a low-level tool called _rpm_ and a high-level tool called _yum_ and _dnf_
+to handle packages.
+
+=== Search
+To search a yum repository for emacs text editor we would do it in the form of:
+
+yum search _search_string_
+
+as
+
+$ yum search emacs
+
+_Try it out._
+
+=== Install
+To install the emacs editor we would do it in the form of:
+
+yum install _package_name_
+
+as
+
+$ yum install emacs
+
+=== Using a file
+Sometimes we want to download a file and install it from the actual _rpm_ package file.
+
+The Red Hat way of doing this would be:
+
+. Find the package file you want
+. Download it using wget, or scp the file
+. Use the _rpm_ command to install it e.g. $ rpm -i emacs-22.1-7.fc7-i386.rpm
+
+If we want to remove the package later we would do it in the form of:
+
+yum erase _package_name_
+
+as
+
+$ yum erase emacs
+
+=== Updating Metadata
+Should we want to update the package management metadata on our systems we would _update_ it doing:
+
+yum update
+
+And if we wanted to update/upgrade a package from a file we would do it in the form:
+
+rpm -U _package_file_
+
+as
+
+$ rpm -U emacs-22.1-7.fc7-i386.rpm
+
+=== Listing whats installed
+And we may also want to list all the packages installed on the system:
+
+rpm -qa
+
+Or, determine if a package is actually installed:
+
+rpm -q _package_name_
+
+=== Displaying information
+To display information about a package we would do it in the form:
+
+yum info _package_name_
+
+as
+
+$ yum info firewalld
+
+=== What package installed this file
+We may also want to determine which package installed a particular file:
+
+rpm -qf _file_name_
+
+as
+
+$ rpm -qf /user/bin/vim
+
+=== Conclusion
+
+In this workshop module, we have:
+
+* Learned how to manage installation of packages
+* Learned how to install and find information on packages
+
+
