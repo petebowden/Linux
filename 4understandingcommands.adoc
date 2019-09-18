@@ -27,7 +27,7 @@ Commands can be one of four things:
 
 === type command
 
-Displays teh kind of command the shell will execute.
+Displays the kind of command the shell will execute.
 
 image:./images/typecommand.png[]
 
@@ -163,7 +163,3 @@ image:./images/unaliasfoo.png[]
 In this workshop module, we have:
 
 * Learned how to find information about commands to assist us making the right decisions
-
-
-
-

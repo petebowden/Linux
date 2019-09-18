@@ -1,3 +1,14 @@
+:gitrepo: https://github.com/petebowden/Linux
+:doctype: book
+:sectnums:
+:sectnumlevels: 3
+ifdef::env-github[]
+:tip-caption: :bulb:
+:note-caption: :information_source:
+:important-caption: :heavy_exclamation_mark:
+:caution-caption: :fire:
+:warning-caption: :warning:
+endif::[]
 # Linux
 = Red Hat Linux
 :toc:
@@ -41,7 +52,8 @@ image::./images/centos.png[What about CentOS]
 Before starting, let's get familiar with the link:lab-environment.adoc[lab environment] setup.
 
 # Outline
-
+[#toc]
+. link:./getting-started.adoc[Workshop Prep - DO THIS FIRST]
 . link:./1shell.adoc[Working with the shell]
 . link:./2navigation.adoc[Navigation and the File System]
 . link:./3manipulatingfiles.adoc[Manipulating Files]
