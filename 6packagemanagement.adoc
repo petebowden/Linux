@@ -111,7 +111,7 @@ rpm -qf _file_name_
 
 as
 
-$ rpm -qf /usr/bin/vim
+$ rpm -qf /user/bin/vim
 
 [NOTE]
 ====

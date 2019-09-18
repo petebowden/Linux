@@ -96,6 +96,9 @@ image:./images/mkdirsubs.png[]
 
 Notice how the _-p_ option created the missing parent directory _Mypaper_.
 
+[NOTE]
+We could also do: mkdir -p Mypaper/{Chapter1,Chapter2,Chapter3}
+
 === Copy Files
 
 Using *cp* commands, we can copy files to a directory.

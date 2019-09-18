@@ -23,7 +23,7 @@ To get information about another user, we would do it in the form of:
 
 $ id _other user_
 
-We can view the owner of a file by using the *ls -l* command+option.  To view teh owner of a directory,
+We can view the owner of a file by using the *ls -l* command+option.  To view the owner of a directory,
 we would issue the *ls -ld* command:
 
 image:./images/lsld.png[]
