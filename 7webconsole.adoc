@@ -32,27 +32,16 @@ The following exercises will walk you through installing and configuring Web Con
 
 == Getting Started
 
-Since we already have web-console installed and active on *workstation.example.com*, we have the option to manage multiple additional hosts via this single portal.  Let's install a few packages to enable the web-console dashboard on *workstation.example.com*.  These steps needs to be performed as root.
+We already have web-console installed and active on *workstation.example.com*, but as a reference these are the commands to install the web console.
 
-.[root@workstation]#
+[NOTE]
+====
+_Native command(s) to install and enable cockpit_
 ----
 yum install -y cockpit-dashboard
-----
-
-Once the packages are installed, you will need to restart the cockpit services to enable the new functionality.
-
-.[root@workstation]#
-----
 systemctl restart cockpit
 ----
-
-This will likely force you to sign-on to the web console again.
-
-Click the icon on the left that looks like a speedometer.
-
-Now click on the *+* icon to add *node2.example.com* to the list of servers we can manage with this web-console.
-
-Now click on *node2.example.com* in the server list to start with this lab.
+====
 
 == Installation and Configuraiton
 
@@ -73,16 +62,18 @@ firewall-cmd --reload
 
 == Web Console User Interface
 
-NOTE: If you are usng the web-console on *workstation.example* with your local browser, you do not need to access the GUI console.
-
-On host *workstation.example.com*, use the console GUI to start a web browser.
-
-Then browse to URL: `https://node2.example.com:9090`
-Login userID: root  Password: <ROOT-PASSWD>
+Login to web console on *workstation.example.com* [ Use your FQDN with GUID: *https://rhel8lab-<GUID>.rhpds.opentlc.com* ]
 
 ====
 image::cockpit-image13.png[Cockpit Login]
 ====
+
+Click the icon on the left that looks like a speedometer.
+
+Now click on the *+* icon to add *node2.example.com* to the list of servers we can manage with this web-console.
+
+Now click on *node2.example.com* in the server list to start with this lab.
+
 
 Here is a simple dashboard where you can monitor current system activities:
 
@@ -101,10 +92,9 @@ To enable persistent metrics, Web Console requires “Performance Co-pilot (pcp)
 
 Use the Web Console -> Terminal to install a couple of packages and restart the Web Console socket.
 
-.[root@node2]#
 ----
-yum install -y cockpit-pcp
-systemctl restart cockpit.socket
+sudo yum install -y cockpit-pcp
+sudo systemctl restart cockpit.socket
 ----
 
 NOTE: When the socket is restarted, your Web Console connection will reset and require you to login again.
