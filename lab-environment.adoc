@@ -17,6 +17,9 @@ The lab instructor will provide a URL via which you will obtain a GUID for the R
 | SSH to the Workstation Bash Shell | `ssh student@rhel8lab-<GUID>.rhpds.opentlc.com` | SSH (port 22)
 |===
 
+[NOTE]
+.Remember that to connect to your lab you must use the `rhel8lab-<GUID>.rhpds.opentlc.com`. In the lab we we will be referencing this host as workstation.example.com
+
 Every lab assumes that you have access to the workstation via SSH for CLI interaction.
 
 Before you start any lab, make sure you are logged into the workstation via SSH.
@@ -28,5 +31,20 @@ The password will be provided by the instructors.
 At the start of the lab you have been provided with a GUID, which uniquely identifies your lab environment.
 In the following instructions, replace the `<GUID>` placeholder with your GUID.
 For example, if your GUID is `a2b3`, the URL `workstation-<GUID>.example.com` becomes `workstation-a2b3.example.com`.
+
+
+[discrete]
+=== Executing tasks on the CLI
+
+[discrete]
+==== Input
+
+Each block of commands to execute will be labeled with the expected *user-id* and *host*.  To enhance cut & paste efficiency, the command prompt is omitted from each line.
+
+.[root@master ~]#
+----
+systemctl status sshd
+----
+
 
 Now, let's start the lab.

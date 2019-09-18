@@ -48,9 +48,9 @@ Using wildcards allows us to select filenames based on patterns.
 .What are the character classes?
 |===
 |Character Class|Matches
-|[:alnum:]|Any alphanumberic character
+|[:alnum:]|Any alphanumeric character
 |[:alpha:]|Any alphabetic character
-|[:digit:]|Any numberal
+|[:digit:]|Any numeral
 |[:lower:]|Any lowercase letter
 |[:uppder:]|Any uppercase letter
 |===
@@ -163,8 +163,3 @@ In this workshop module, we have:
 
 * Learned how to manage files using the most common file and directory commands
 * Learned about several of the options available to the most common commands
-
-
-
-
-
