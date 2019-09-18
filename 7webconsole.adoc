@@ -70,7 +70,18 @@ image::cockpit-image13.png[Cockpit Login]
 
 Click the icon on the left that looks like a speedometer.
 
+====
+image::cockpit-image13a.png[Add Server]
+====
+
 Now click on the *+* icon to add *node2.example.com* to the list of servers we can manage with this web-console.
+====
+image::cockpit-image13b.png[Add node 2]
+====
+
+====
+image::cockpit-image13c.png[Add node 2]
+====
 
 Now click on *node2.example.com* in the server list to start with this lab.
 
