@@ -1,4 +1,4 @@
-:gitrepo: https://github.com/petebowden/Linux
+:gitrepo: https://github.com/rsedor/Linux
 :doctype: book
 :sectnums:
 :sectnumlevels: 3
@@ -46,11 +46,11 @@ image::./images/red-hat-linux.png[How Red Hat community works]
 *Why not just use CentOS again?*
 
 image::./images/centos.png[What about CentOS]
-
+[discrete]
 # Lab Environment
 
 Before starting, let's get familiar with the link:lab-environment.adoc[lab environment] setup.
-
+[discrete]
 # Outline
 
 . link:./getting-started.adoc[Workshop Prep - DO THIS FIRST]
