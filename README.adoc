@@ -52,7 +52,7 @@ image::./images/centos.png[What about CentOS]
 Before starting, let's get familiar with the link:lab-environment.adoc[lab environment] setup.
 
 # Outline
-[#toc]
+
 . link:./getting-started.adoc[Workshop Prep - DO THIS FIRST]
 . link:./1shell.adoc[Working with the shell]
 . link:./2navigation.adoc[Navigation and the File System]
