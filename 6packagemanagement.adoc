@@ -111,7 +111,16 @@ rpm -qf _file_name_
 
 as
 
-$ rpm -qf /user/bin/vim
+$ rpm -qf /usr/bin/vim
+
+[NOTE]
+====
+_You can also use yum to gather this information:_
+----
+yum whatprovides /usr/bin/vim
+----
+====
+
 
 === Conclusion
 
@@ -119,5 +128,3 @@ In this workshop module, we have:
 
 * Learned how to manage installation of packages
 * Learned how to install and find information on packages
-
-
